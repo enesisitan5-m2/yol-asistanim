@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yol Asistanım - Gizlilik Politikası</title>
+  <meta name="description" content="Yol Asistanım mobil uygulaması gizlilik politikası.">
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --primary: #1E3A8A;
+      --text: #111827;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #1E3A8A, #2563EB);
+      color: #fff;
+      padding: 42px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 800;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: rgba(255,255,255,.85);
+    }
+    main {
+      max-width: 900px;
+      margin: -24px auto 40px;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 12px 32px rgba(17, 24, 39, .08);
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 28px;
+      font-size: 21px;
+    }
+    h2:first-child { margin-top: 0; }
+    p, li { font-size: 15.5px; }
+    ul { padding-left: 22px; }
+    .muted { color: var(--muted); }
+    .footer {
+      max-width: 900px;
+      margin: 0 auto 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 0 16px;
+    }
+    a { color: var(--primary); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Yol Asistanım</h1>
+    <p>Gizlilik Politikası</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <p class="muted"><strong>Son güncelleme:</strong> 23 Mayıs 2026</p>
+
+      <h2>1. Genel Bilgilendirme</h2>
+      <p>
+        Yol Asistanım, sürücülere park konumu kaydetme, yol ve park bildirimi oluşturma,
+        harita üzerinde konum görüntüleme, araç bakım ve hatırlatma bilgilerini takip etme
+        gibi özellikler sunan bir mobil uygulamadır.
+      </p>
+      <p>
+        Bu politika, Yol Asistanım uygulamasında hangi verilerin işlendiğini, bu verilerin
+        hangi amaçlarla kullanıldığını ve kullanıcıların hangi haklara sahip olduğunu açıklar.
+      </p>
+
+      <h2>2. Toplanan ve İşlenen Veriler</h2>
+      <p>Uygulama, kullanım amacına göre aşağıdaki veri türlerini işleyebilir:</p>
+      <ul>
+        <li><strong>Konum verisi:</strong> Harita, park konumu kaydetme, yakındaki yardım noktalarını gösterme ve yol/park bildirimi oluşturma için kullanılır.</li>
+        <li><strong>Yol ve park bildirimleri:</strong> Kullanıcının eklediği kaza, radar, yol çalışması, park yoğunluğu, boş park veya çekici/ceza riski gibi bildirimler işlenebilir.</li>
+        <li><strong>Araç bilgileri:</strong> Plaka, marka, model, kilometre, bakım, muayene, sigorta ve benzeri bilgiler kullanıcının cihazında saklanabilir.</li>
+        <li><strong>Park notları:</strong> Kullanıcının isteğe bağlı olarak yazdığı park notları cihazda saklanabilir.</li>
+        <li><strong>Reklam verileri:</strong> Ücretsiz kullanımda küçük banner reklamlar için reklam sağlayıcıları tarafından teknik reklam verileri işlenebilir.</li>
+        <li><strong>Bildirim izinleri:</strong> Park algılama ve hatırlatma bildirimleri için cihaz bildirim izni kullanılabilir.</li>
+      </ul>
+
+      <h2>3. Konum Verisinin Kullanımı</h2>
+      <p>
+        Konum verisi; kullanıcının mevcut konumunu haritada göstermek, park konumu kaydetmek,
+        aracına geri dönüş rotası çizmek, yakındaki yardım noktalarını göstermek ve yol/park
+        bildiriminin yaklaşık bölgesini belirlemek için kullanılır.
+      </p>
+      <p>
+        Park ve yol bildirimi özelliklerinde tam nokta yerine bölgesel bilgi kullanılabilir.
+        Kullanıcı konum izinlerini cihaz ayarlarından her zaman kapatabilir.
+      </p>
+
+      <h2>4. Verilerin Saklanması</h2>
+      <p>
+        Araç profili, park kaydı, yolculuk kayıtları ve kullanıcı tercihleri gibi bazı veriler
+        kullanıcının cihazında saklanabilir. Yol ve park bildirimleri, uygulamanın canlı bildirim
+        özelliği için Firebase/Firestore altyapısında saklanabilir.
+      </p>
+
+      <h2>5. Üçüncü Taraf Servisler</h2>
+      <p>Uygulama bazı özellikler için üçüncü taraf servislerden yararlanabilir:</p>
+      <ul>
+        <li><strong>Firebase / Firestore:</strong> Yol ve park bildirimlerinin saklanması ve canlı görüntülenmesi için kullanılabilir.</li>
+        <li><strong>TomTom servisleri:</strong> Trafik bilgileri ve yakındaki yardım noktalarının bulunması için kullanılabilir.</li>
+        <li><strong>Harita altyapıları:</strong> Harita görünümleri için açık harita/karo servisleri kullanılabilir.</li>
+        <li><strong>Google AdMob:</strong> Ücretsiz kullanıcılar için küçük banner reklamlar göstermek amacıyla kullanılabilir.</li>
+      </ul>
+
+      <h2>6. Reklamlar</h2>
+      <p>
+        Uygulamanın ücretsiz sürümünde kullanıcı deneyimini bölmeyecek şekilde küçük banner reklamlar
+        gösterilebilir. Tam ekran reklamlar veya kullanıcıyı zorlayan reklam modelleri tercih edilmez.
+        Premium kullanımda reklamlar kaldırılabilir.
+      </p>
+
+      <h2>7. Verilerin Paylaşılması</h2>
+      <p>
+        Kullanıcı verileri satılmaz. Veriler yalnızca uygulama özelliklerinin çalışması,
+        güvenlik, hata ayıklama, reklam gösterimi ve yasal yükümlülüklerin yerine getirilmesi
+        amacıyla gerekli servis sağlayıcılarla teknik olarak işlenebilir.
+      </p>
+
+      <h2>8. Kullanıcı Kontrolleri</h2>
+      <p>Kullanıcılar cihaz ayarlarından aşağıdaki izinleri yönetebilir:</p>
+      <ul>
+        <li>Konum izni</li>
+        <li>Bildirim izni</li>
+        <li>Reklam tercihleri</li>
+        <li>Uygulama verilerini temizleme veya uygulamayı kaldırma</li>
+      </ul>
+
+      <h2>9. Çocukların Gizliliği</h2>
+      <p>
+        Yol Asistanım, çocuklara yönelik bir uygulama olarak tasarlanmamıştır.
+      </p>
+
+      <h2>10. Politika Değişiklikleri</h2>
+      <p>
+        Bu gizlilik politikası zaman zaman güncellenebilir. Güncellemeler bu sayfada yayımlanır.
+      </p>
+
+      <h2>11. İletişim</h2>
+      <p>
+        Gizlilik politikası veya uygulama hakkında iletişim için:
+        <br>
+        <strong>E-posta:</strong> <a href="mailto:ruystechnologies@gmail.com">ruystechnologies@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <div class="footer">
+    © 2026 RUYS TECHNOLOGIES - Yol Asistanım
+  </div>
+</body>
+</html>
